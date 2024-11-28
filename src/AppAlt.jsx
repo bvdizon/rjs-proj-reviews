@@ -6,7 +6,7 @@ const App = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
 
-  // using modolus
+  // using modulos operator
   const prevPerson = () => {
     setIndex((currIndex) => (currIndex - 1 + people.length) % people.length);
   };
